@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  sans-serif; 
+    position: relative;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 20px 50px;
+}
+.cart{
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+
+}
+.cartAmount{
+    
+position: absolute;
+top: -15px;
+right: -10px;
+background-color: red;
+color: white;
+font-size: 20px;
+padding: 3px;
+border-radius: 3px;
+}
+
+/**
+* ? Shop items styles are here
+ **/
+
+ .shop{
+    display: grid;
+    grid-template-columns: repeat(4 , 223px);
+    gap: 7px;
+    justify-content: center;
+    padding: 20px;
+ }
+   @media(max-width: 1000px ){
+    .shop{
+        grid-template-columns: repeat(2 , 223px);
+    }  
+  } 
+  @media(max-width: 500px ){
+    .shop{
+        grid-template-columns: repeat(1 , 223px);
+    }
+  }
+ .item{
+    border: 2px solid rgb(79, 73, 73);
+    border-radius: 5px;
+    padding: 5px; 
+    
+    
+ }
+ .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px; 
+ }
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+.bi bi-dash-circle-fill{
+    color: red;
+}
+.bi bi-plus-circle-fill{
+    color: green;
+}
+
+/**
+* ! style rules for lebel and some bittons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Homebtn, 
+.checkout,
+.removeAll{
+   margin-top: 10px;
+   background-color: #d57317;
+   color: #fff;
+   border-radius: 20px;
+   padding: 10px;
+   cursor: pointer;
+   
+}
+.bi-x-lg{
+    color: red;
+    font-size: bold;
+}
+
+/**
+* ! style rules for shopping-cart
+**/
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1 , 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+
+/**
+* ! style rules for cart-items
+**/
+.cart-item{
+border: 2px solid black;
+border-radius: 5px;
+display: flex;
+}
+.title-price-x{
+    width: 195px;
+    display: flex;align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background-color:#212529;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+.checkout{
+    color:white;
+    background: green;
+}
+.removeAll{
+    background: red;
+}
