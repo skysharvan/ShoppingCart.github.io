@@ -164,3 +164,6 @@ display: flex;
 .removeAll{
     background: red;
 }
+img{
+    width: 100%;
+}
